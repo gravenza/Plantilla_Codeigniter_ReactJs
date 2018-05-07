@@ -11,6 +11,7 @@
     "eject": "react-scripts eject",
     "gitadd": "git add .",
     "gitv": "git commit -m\"version 0.0.1\"",
+    "gitremote":"git remote add origin https://github.com/cristianmafla/Plantilla_Codeigniter_ReactJs.git",
     "github": "git push -u origin master"
   },
   "author": "cristianmafla",
