@@ -19,7 +19,7 @@ import { render } from "react-dom";
       */ 
         mifuncion = () => {
             this.setState({
-                key: "valor del state despues del click"
+                key: "valor del state despues del click22"
             })
         };
        
