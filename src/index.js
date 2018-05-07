@@ -4,7 +4,7 @@ import { render } from "react-dom";
     class App extends Component {
         render(){
             return (
-                <h1>PLANTILLA CODEIGNITER CON REACTJS</h1>
+                <h1>PLANTILLA CODEIGNITER CON REACTJS cambio visual code</h1>
             )
         }
     }
