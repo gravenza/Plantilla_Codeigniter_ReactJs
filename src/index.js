@@ -5,7 +5,7 @@ import { render } from "react-dom";
         constructor(props){
             super(props)
         this.state = {
-            key:"valor state actual..."
+            key:"valor state actua"
         }
         }
 
