@@ -18,7 +18,8 @@ class Otro extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index(){
+	/*
+		public function index(){
 		$array['title'] ='codeigniter_reactjs';
 		//$array['link'] = '';
 	    $array['contenido']='<h1>esto es otro controlador prueba </h1>';
@@ -27,4 +28,23 @@ class Otro extends CI_Controller {
 
 		$this->load->view('otro',$array);
 	}
+	*/
+
+	public function index(){
+		$this->load->database();
+        $consulta = $this->db->select('*')
+                             ->from('departamentos')
+                             ->where('id_departamento',11,1)
+                             ->get();
+        if($consulta->num_rows() > 0 ){
+            $row = $consulta->row();
+            $array['departamento'] = $row->departamento ;
+            	
+        }else{
+            $array['departamento'] = 'error_consulta';
+		} 
+		echo $array['departamento'];
+	}
+
+
 }
