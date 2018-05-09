@@ -22,8 +22,7 @@ class Welcome extends CI_Controller {
 		$array['title'] ='codeigniter_reactjs';
 		//$array['link'] = '';
 	    //$array['contenido']='<h1>_____</h1>';
-		$array['script'] ='<script src="'.site_url('public/js/bundle.js').'"></script>
-						  ';
+		$array['script'] ='<script src="'.site_url('public/js/bundle.js').'"></script>';
 
 		$this->load->view('welcome_message',$array);
 	}

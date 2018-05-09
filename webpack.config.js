@@ -12,9 +12,13 @@ module.exports = {
                 test: /\.js$/,
                 loader: 'babel-loader',
                 exclude: /node_modules/
+            },
+            {
+                test: /\.css$/,
+                loader: 'style-loader!css-loader',
             }
         ]
     },
-    //mode: 'production'
-    mode: 'development'
+    mode: 'production'
+    //mode: 'development'
 }
